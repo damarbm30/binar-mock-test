@@ -1,7 +1,7 @@
 # binar-mock-test
 
 ## Kegunaan JSON pada REST API
-
+JSON merupakan salah satu bentuk format data yang digunakan untuk pertukaran data antara client dan server melalui REST API (Representational State Transfer Application Programming Interface). JSON cukup fleksibel, dapat dibaca dan dibuat oleh berbagai bahasa pemrograman seperti Javascript dan Python.
 ## Cara Kerja REST API
 
 ## Fitur Website
