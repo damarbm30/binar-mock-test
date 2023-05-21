@@ -13,7 +13,7 @@ const Todos = () => {
   }, [dispatch]);
 
   const onChangeToggle = (id) => {
-    dispatch(toggleTodo({ id }));
+    dispatch(toggleTodo(id));
   };
 
   return todos.length > 0 ? (

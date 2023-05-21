@@ -15,7 +15,7 @@ const todosSlice = createSlice({
   initialState,
   reducers: {
     toggleTodo: (state, action) => {
-      const { id } = action.payload;
+      const id = action.payload;
       const todo = state.todos.find((todo) => todo.id === id);
       if (todo) todo.completed = !todo.completed;
     },

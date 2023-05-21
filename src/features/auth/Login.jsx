@@ -1,6 +1,10 @@
 import { useRef } from "react";
+import { useDispatch } from "react-redux";
+
+import { userLogin } from "./authSlice";
 
 const Login = () => {
+  const dispatch = useDispatch();
   const usernameRef = useRef();
 
   const onSubmit = (e) => {
@@ -12,8 +16,7 @@ const Login = () => {
       username: username,
     };
 
-    localStorage.setItem("auth", JSON.stringify(auth));
-    window.location.reload();
+    dispatch(userLogin({ key: "auth", value: auth }));
   };
 
   return (
